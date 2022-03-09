@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        background-color: #aaa;
+      }
+      p::before {
+        content: "我是before";
+        color: red;
+      }
+      p::after {
+        content: "我是after";
+        color: red;
+      }
+      h2 {
+        text-align: center;
+        font-size: 40px;
+      }
+      h2::after {
+        content: "";
+        display: block;
+        margin: auto;
+        width: 1em;
+        height: 2px;
+        background-color: #f00;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>title</h2>
+    <p>內容</p>
+  </body>
+</html>
