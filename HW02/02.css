@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrap {
+  background-color: #f9fafb;
+  width: 100%;
+}
+.header {
+  padding: 0 50px 20px;
+}
+.header h2 {
+  padding: 20px 0;
+}
+.header p {
+  font-size: 20px;
+}
+.container {
+  background-color: #f9fafb;
+  max-width: 640px;
+  margin: auto;
+}
+.item {
+  margin: 20px 20px;
+  padding: 20px;
+  background-color: white;
+}
+.pic {
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto;
+}
+.teacher-name {
+  text-align: center;
+}
+.teacher-name p {
+  padding-top: 20px;
+}
+.teacher-name h3 {
+  padding-top: 20px;
+}
+.txt {
+  text-align: left;
+  padding-left: 10px;
+}
+.txt p {
+  padding-top: 20px;
+}
+.others {
+  padding: 15px 10px;
+}
+.others a {
+  border: 1px solid red;
+  color: red;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .name {
+    display: flex;
+  }
+  .pic {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .teacher-name {
+    margin-left: 10px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    width: calc(50% - 80px);
+  }
+}
